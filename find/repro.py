@@ -3,7 +3,6 @@ import threading
 import requests
 import sys
 import time
-import socket
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 PORT = 8022

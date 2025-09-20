@@ -26,8 +26,7 @@ def stream_tokens(q: str):
     def generator():
         for i in range(3):
             yield f"data: token-{i}\n\n"
-        # threading.Thread(target=send_log).start()
-        send_log()
+        threading.Thread(target=send_log).start()
     return StreamingResponse(generator(), media_type="text/event-stream")
 
 

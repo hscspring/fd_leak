@@ -1,0 +1,5 @@
+sentry_sdk
+eventlet
+requests
+fastapi
+dnspython==2.3.0
